@@ -1,0 +1,49 @@
+$body: #ffffff;
+$main: #FFC470;
+
+
+body {
+    background: #2C2B27;
+    color: $main;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+p {
+    font-size: 16px;
+    color: $body;
+}
+
+a {
+    text-decoration: none;
+    color: $main;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrapper {
+    max-width: 1230px;
+	width: 92%;
+	margin: 0 auto;
+}
+
+header {
+    .flex {
+        justify-content: space-between;
+        align-items: end;
+        padding: 50px 0;
+        .logo {
+            img {
+                width: 55%;
+            }
+        }
+        .links {
+            display: flex;
+            gap: 35px;        
+        }
+    }
+}
