@@ -321,6 +321,11 @@ body.is--active {
     margin: 0 20px;
   }
 }
+@media (max-width: 479px) {
+  .the-plan-container .card-wrapper .plan-card {
+    margin: 0;
+  }
+}
 .the-plan-container .card-wrapper .plan-card .image {
   overflow: hidden;
   position: relative;
