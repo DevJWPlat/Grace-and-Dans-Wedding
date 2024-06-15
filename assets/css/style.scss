@@ -68,6 +68,9 @@ a {
 
 .container-b-p {
     margin-bottom: 160px;
+    @media (max-width: 550px) {
+        margin-bottom: 80px;
+    }
 }
 
 header {
@@ -146,7 +149,7 @@ body {
     background-color: $main;
     border-radius: 0;
     position: absolute;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 
     &:before{
       left: 0;
@@ -157,7 +160,7 @@ body {
       background-color: $main;
       content: "";
       border-radius: 0;
-      transition-duration: 0.5s;
+      transition-duration: 0.3s;
 
     }
 
@@ -170,7 +173,7 @@ body {
       background-color: $main;
       content: "";
       border-radius: 0;
-      transition-duration: 0.5s;
+      transition-duration: 0.3s;
 
     }
   }
@@ -187,36 +190,40 @@ body {
 
 
 .mobile-menu-btn{
+    display: none;
+    @media (max-width: 900px) {
+        display: block;
+    }
     position: relative;
     z-index: 1000000;
   .icon{
-    transition-duration: 0.5s;
-    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
 
     &:after{
-      transition: transform 0.5s, top 0.5s 0.5s;
+      transition: transform 0.3s, top 0.3s 0.3s;
     }
 
     &:before{
-      transition: transform 0.5s, top 0.5s 0.5s;
+      transition: transform 0.3s, top 0.3s 0.3s;
     }
   }
 }
 
 .mobile-menu-btn.open .icon{
   transition-duration: 0.1s;
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
   background: transparent;
 }
 
 .mobile-menu-btn.open .icon:before{
-  transition: top 0.5s, transform 0.5s 0.5s;
+  transition: top 0.3s, transform 0.3s 0.3s;
   top: 0px;
   transform: rotateZ(-45deg);
 }
 
 .mobile-menu-btn.open .icon:after{
-  transition: top 0.4s, transform 0.5s 0.5s;
+  transition: top 0.4s, transform 0.3s 0.3s;
   top: 0px;
   transform: rotateZ(45deg);
 }
@@ -228,6 +235,9 @@ body {
     justify-content: space-between;
     @media (max-width: 1000px) {
         flex-direction: column;
+    }
+    @media (max-width: 550px) {
+        margin-top: 0;
     }
     .image {
         width: 50%;
@@ -422,6 +432,12 @@ body {
             left: -70px;
             bottom: -80px;
             width: 30%;
+            @media (max-width: 550px) {
+                position: absolute;
+                left: -30px;
+                bottom: -50px;
+                width: 20%;
+            }
         }
     }
 }

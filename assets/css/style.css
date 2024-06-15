@@ -64,6 +64,11 @@ a {
 .container-b-p {
   margin-bottom: 160px;
 }
+@media (max-width: 550px) {
+  .container-b-p {
+    margin-bottom: 80px;
+  }
+}
 
 header .flex {
   justify-content: space-between;
@@ -137,7 +142,7 @@ body.is--active {
   background-color: #FFFFFF;
   border-radius: 0;
   position: absolute;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 .icon:before {
   left: 0;
@@ -148,7 +153,7 @@ body.is--active {
   background-color: #FFFFFF;
   content: "";
   border-radius: 0;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 .icon:after {
   left: 0;
@@ -159,7 +164,7 @@ body.is--active {
   background-color: #FFFFFF;
   content: "";
   border-radius: 0;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .menu {
@@ -172,34 +177,40 @@ body.is--active {
 }
 
 .mobile-menu-btn {
+  display: none;
   position: relative;
   z-index: 1000000;
 }
+@media (max-width: 900px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+}
 .mobile-menu-btn .icon {
-  transition-duration: 0.5s;
-  transition-delay: 0.5s;
+  transition-duration: 0.3s;
+  transition-delay: 0.3s;
 }
 .mobile-menu-btn .icon:after {
-  transition: transform 0.5s, top 0.5s 0.5s;
+  transition: transform 0.3s, top 0.3s 0.3s;
 }
 .mobile-menu-btn .icon:before {
-  transition: transform 0.5s, top 0.5s 0.5s;
+  transition: transform 0.3s, top 0.3s 0.3s;
 }
 
 .mobile-menu-btn.open .icon {
   transition-duration: 0.1s;
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
   background: transparent;
 }
 
 .mobile-menu-btn.open .icon:before {
-  transition: top 0.5s, transform 0.5s 0.5s;
+  transition: top 0.3s, transform 0.3s 0.3s;
   top: 0px;
   transform: rotateZ(-45deg);
 }
 
 .mobile-menu-btn.open .icon:after {
-  transition: top 0.4s, transform 0.5s 0.5s;
+  transition: top 0.4s, transform 0.3s 0.3s;
   top: 0px;
   transform: rotateZ(45deg);
 }
@@ -213,6 +224,11 @@ body.is--active {
 @media (max-width: 1000px) {
   .hero-container {
     flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .hero-container {
+    margin-top: 0;
   }
 }
 .hero-container .image {
@@ -431,6 +447,14 @@ body.is--active {
   left: -70px;
   bottom: -80px;
   width: 30%;
+}
+@media (max-width: 550px) {
+  .present-container .image .flowers {
+    position: absolute;
+    left: -30px;
+    bottom: -50px;
+    width: 20%;
+  }
 }
 
 footer .image {
