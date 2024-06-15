@@ -29,8 +29,20 @@
                 <a href="#gift">Wedding present</a>
                 <a href="#rsvp">RSVP</a>
             </div>
+            <div class="mobile-menu-btn menu">
+                <div class="icon"></div>
+            </div>
         </div>
     </header>
+    <div class="mobile-navbar mobile-navbar-collapse">
+        <div class="mobile-links mob-content">
+            <a href="#plan">The plan</a>
+            <a href="#stay">Where to stay</a>
+            <a href="#where">How to get there</a>
+            <a href="#gift">Wedding present</a>
+            <a href="#rsvp">RSVP</a>
+        </div>
+    </div>
     <!-- hero -->
     <div class="hero-container container-b-p wrapper">
         <div class="image">
@@ -48,8 +60,9 @@
     </div>
     <!-- hero -->
     <!-- The plan -->
-    <div class="the-plan-container wrapper container-b-p">
-        <h2 class="title" id="plan">The plan</h2>
+    <div id="plan"></div>
+    <div class="the-plan-container wrapper container-b-p overflow-x-h">
+        <h2 class="title">The plan</h2>
         <div class="desktop-container card-wrapper">
             <!-- 12 -->
             <div class="plan-card">
@@ -214,6 +227,83 @@
         </div>
     </div>
     <!-- The plan -->
+    <!-- where to stay -->
+    <div id="stay"></div>
+    <div class="hotel-container wrapper container-b-p flex">
+        <div class="text">
+            <h2 class="title">Where to stay</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum illum magnam et nesciunt totam doloribus dolore consequatur cupiditate odit, neque recusandae, provident veritatis quisquam minus autem consectetur, assumenda vitae. Nulla?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nobis accusamus aut praesentium commodi ad cumque doloremque quibusdam, quos, nam fugit rerum delectus fuga in a ratione provident, atque mollitia.
+            </p>
+            <div class="button-container">
+                <a href="" class="main-btn">View hotel</a>
+                <a href="" class="main-btn">View map</a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/images/hotel-test.jpeg" alt="Travelodge Chester Central Bridge Street">
+        </div>
+    </div>
+    <!-- where to stay -->
+    <!-- how to get here -->
+    <div id="where"></div>
+    <div class="travel-container wrapper container-b-p flex">
+        <div class="image">
+            <img src="assets/images/venue.jpeg" alt="Travelodge Chester Central Bridge Street">
+        </div>
+        <div class="text">
+            <h2 class="title">How to get here</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum illum magnam et nesciunt totam doloribus dolore consequatur cupiditate odit, neque recusandae, provident veritatis quisquam minus autem consectetur, assumenda vitae. Nulla?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nobis accusamus aut praesentium commodi ad cumque doloremque quibusdam, quos, nam fugit rerum delectus fuga in a ratione provident, atque mollitia.
+            </p>
+            <a href="" class="main-btn">View map</a>
+        </div>
+    </div>
+    <!-- how to get here -->
+    <!-- wedding present -->
+    <div id="gift"></div>
+    <div class="present-container wrapper container-b-p flex">
+        <div class="text">
+            <h2 class="title">Wedding present</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum illum magnam et nesciunt totam doloribus dolore consequatur cupiditate odit, neque recusandae, provident veritatis quisquam minus autem consectetur, assumenda vitae. Nulla?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nobis accusamus aut praesentium commodi ad cumque doloremque quibusdam, quos, nam fugit rerum delectus fuga in a ratione provident, atque mollitia.
+            </p>
+            <a href="" class="main-btn">Our honeymoon pot</a>
+        </div>
+        <div class="image">
+            <img src="assets/images/present.webp" alt="Travelodge Chester Central Bridge Street">
+            <div class="flowers">
+                <img src="assets/svgs/flowers.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- wedding present -->
+    <!-- rsvp -->
+    <div id="rsvp"></div>
+    <div class="travel-container wrapper container-b-p flex">
+        <div class="image">
+            <img src="assets/images/rsvp.jpeg" alt="Travelodge Chester Central Bridge Street">
+        </div>
+        <div class="text">
+            <h2 class="title">RSVP</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum illum magnam et nesciunt totam doloribus dolore consequatur cupiditate odit, neque recusandae, provident veritatis quisquam minus autem consectetur, assumenda vitae. Nulla?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nobis accusamus aut praesentium commodi ad cumque doloremque quibusdam, quos, nam fugit rerum delectus fuga in a ratione provident, atque mollitia.
+            </p>
+            <a href="" class="main-btn">Email us</a>
+        </div>
+    </div>
+    <!-- rsvp -->
+    <!-- footer -->
+    <footer class="wrapper">
+        <div class="image">
+            <img src="assets/svgs/logo.svg" alt="">
+        </div>
+    </footer>
+    <!-- footer -->
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
@@ -228,8 +318,8 @@
                 dots: false,
                 infinite: true,
                 autoplay: true,
-                autoplaySpeed: 6000,
-                speed: 300,
+                autoplaySpeed: 5000,
+                speed: 400,
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 responsive: [
@@ -237,21 +327,18 @@
                     breakpoint: 900,
                     settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
@@ -259,6 +346,23 @@
                 // instead of a settings object
                 ]
             });
+
+            $('.mobile-menu-btn').click(function (e) {
+                e.preventDefault();
+                $('.mobile-navbar-collapse').toggleClass('show-menu');
+                $("body").toggleClass("is--active");
+		    });
+
+
+            $(".mobile-menu-btn").click(function(){
+                $(".mobile-menu-btn").toggleClass("open");
+            })
+
+            $(".mobile-links a").click(function(){
+                $(".mobile-navbar-collapse").toggleClass("show-menu");
+                $("body").toggleClass("is--active");
+                $(".mobile-menu-btn").toggleClass("open");
+            })
         });
       </script>
 </body>
