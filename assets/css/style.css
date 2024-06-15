@@ -122,6 +122,8 @@ header .flex .links a:hover {
 }
 .mob-content a {
   font-size: 25px;
+  font-family: "Playwrite IN", cursive;
+  font-optical-sizing: auto;
 }
 
 .show-menu {
