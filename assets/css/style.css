@@ -628,4 +628,9 @@ footer .image {
 }
 footer .image img {
   width: 100%;
+}
+footer .me {
+  text-align: right;
+  margin-bottom: 50px;
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */
